@@ -9,13 +9,13 @@ By creating the front-end of a blogging website, we  will familiarize  with how 
 
 The project is divided into three deliverable parts as follows:
 
-Part A: Creating the Homepage				
+Part A: Creating the Homepage	=>			
 Relevant files to work on: index.html, index.js, header.js, index.css, header.css
 
-Part B: Creating list of blogs			
+Part B: Creating list of blogs	=>		
 Relevant files to work on: bloglist.html, bloglist.css, bloglist.js
 
-Part C: Creating Blog Post		
+Part C: Creating Blog Post	=>	
 Relevant files to work on: post.html, post.css, post.js
 
 --------------------------------------------------------------
