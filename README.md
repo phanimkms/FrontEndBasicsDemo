@@ -19,3 +19,9 @@ Part C: Creating Blog Post	=>
 Relevant files to work on: post.html, post.css, post.js
 
 --------------------------------------------------------------
+![1_Home_Page](https://user-images.githubusercontent.com/47784012/54476923-cefba200-4828-11e9-98fe-bdf9d115a325.png)
+![1 3_Home_Page](https://user-images.githubusercontent.com/47784012/54476956-1e41d280-4829-11e9-9354-e573fbc39acc.png)
+![2_Posts_Page](https://user-images.githubusercontent.com/47784012/54476927-dd49be00-4828-11e9-9c2d-1c76e1b564da.png)
+![3_BlogPost_Page](https://user-images.githubusercontent.com/47784012/54476929-e3d83580-4828-11e9-836a-2845a5ace5d7.png)
+
+--------------------------
