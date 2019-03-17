@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place all CSS for header in this file -->
     <link href='css\header.css' rel='stylesheet' type='text/css'>
@@ -34,18 +35,36 @@
         </div>
     </div>
 
-    <div>
-
+    <div id="signInModal" class="modal">
         <!-- Insert code for Sign In modal here -->
-        
-
+        <span class="close">&times;</span>
+        <form id="signin-form" name="SigninForm">
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <button type="submit" onClick="signin(username, password)" class="signin-btn">Sign In</button>
+            </form>
+    	
     </div>
 
-    <div>
-
-    	<!-- Insert code for Sign Up modal here -->
-
-    </div>
+    <div id="signUpModal" class="modal">
+        <!-- Insert code for Sign Up modal here -->
+            <span class="close">&times;</span>
+            <form id="signup-form" name="SignupForm">
+                    <label for="fullname" class="label-text">Full Name</label>
+                    <input type="text" id="fullname" placeholder="Enter Full Name" required>
+                    <label for="username" class="label-text">Username</label>
+                    <input type="text" id="username" placeholder="Enter Username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" id="password" placeholder="Enter Password" required>
+                    <label for="confirmpassword" class="label-text">Confirm Password</label>
+                    <input type="password" id="confirmpassword" placeholder="Confirm Password" required>
+                    <button type="submit" onClick="signup(username, password)" class="signup-btn">Sign Up</button>
+                </form>
+            
+    
+        </div>
 
     <div>
 
