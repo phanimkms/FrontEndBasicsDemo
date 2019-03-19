@@ -25,3 +25,6 @@ Relevant files to work on: post.html, post.css, post.js
 ![3_BlogPost_Page](https://user-images.githubusercontent.com/47784012/54476929-e3d83580-4828-11e9-836a-2845a5ace5d7.png)
 
 --------------------------
+Progress Made:
+Sign Up Modal First Draft Ready ---still lot of efforts needed to get PART-A 100% correct .If we figure out Part A , rest two parts are a piece of cake
+![SignupModalDraftReady](https://user-images.githubusercontent.com/47784012/54645529-5283f000-4ac2-11e9-9ab9-60c567e4d0db.JPG)
