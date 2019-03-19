@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Place all CSS for header in this file -->
-    <link href='css\header.css' rel='stylesheet' type='text/css'>
+    <link href='css/header.css' rel='stylesheet' type='text/css'>
 
     <!-- Place all CSS for the rest of the elements in this file -->
-    <link href='css\index.css' rel='stylesheet' type='text/css'>
-
+    <link href='css/index.css' rel='stylesheet' type='text/css'>
+    
 	<!-- Place all CSS for fonts in this file -->
-    <link href='css\font.css' rel='stylesheet' type='text/css'>
+    <link href='css/font.css' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
@@ -19,8 +21,8 @@
         <div class="header">
 
             <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
-            <input class="topButtons" type="button" value="Sign In">
-            <input class="topButtons" type="button" value="Sign Up">
+            <input id="sign-in-btn" class="topButtons" type="button" value="Sign In">
+            <input id="sign-up-btn" class="topButtons" type="button" value="Sign Up">
             <a id="pageTitle" class="logo-title">ScriBBler</a>
             <p class="middleText">Explore, Imagine, Create</p>
 
@@ -35,20 +37,32 @@
         </div>
     </div>
 
-    <div id="signInModal" class="modal">
+    <div id="sign-in-modal" class="signInModal">
         <!-- Insert code for Sign In modal here -->
-        <span class="close">&times;</span>
+        <div id="sign-in-modal-content" class="modalContent">
+            <h1 style="text-align:center;"><b>Welcome Back!</b><span class="close">&times;</span></h1>
+            <hr>
+            
         <form id="signin-form" name="SigninForm">
+                
                 <label for="username" class="label-text">Username</label>
                 <input type="text" id="username" placeholder="Enter Username" required>
                 <label for="password" class="label-text">Password</label>
                 <input type="password" id="password" placeholder="Enter Password" required>
                 <button type="submit" onClick="signin(username, password)" class="signin-btn">Sign In</button>
+                
             </form>
+            <div class="signInFooter">
+                    <p style="text-align: center;"><b>Not a Member?<a href="./html/sign-up.html"> Sign Up</a></b>
+                        
+                    </p>
+                </div>
+        </div>
+        
     	
     </div>
 
-    <div id="signUpModal" class="modal">
+    <div id="sign-up-modal" class="signUpModal">
         <!-- Insert code for Sign Up modal here -->
             <span class="close">&times;</span>
             <form id="signup-form" name="SignupForm">

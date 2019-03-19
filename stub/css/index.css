@@ -36,25 +36,11 @@ input.postButtons {
    justify-content: center;
    color: black;
   }
-  body {
-   font-family: Arial, sans-serif;
-   display: flex;
-   flex-direction: column;
-   background-color: #fff;
-   color: #333;
-   align-items: center;
-   justify-content: center;
-}
+  
 
-.container {
-   display: flex;
-   width: 80%;
-   flex-direction: column;
-   justify-content: center;
-}
 
 @media (min-width: 992px) {
-   .container {
+   .modalContent {
        width: 30%;
    }
 }
@@ -62,55 +48,99 @@ input.postButtons {
 form {
    display: flex;
    flex-direction: column;
+   width:70%;
 }
-
-input {
-   padding: 10px;
-   outline: none;
-}
-
 .label-text {
    font-weight: bold;
-   margin: 10px 0;
+   padding-inline-start: 0%;
 }
 
-a {
+input[type=text], input[type=password] {
+   width: 144%;
+   padding: 10px;
+   margin-top: 5px;
+   margin-bottom:10px;
+   display: inline-block;
+   border: none;
+   box-sizing: border-box;
+   padding: 10px;
+   outline: none;
+   background-color:rgb(220,220,220);
+}
+.signin-btn {
+   background-color: #4CAF50;
+   color: #fff;
+   font-size: 16px;
+   padding: 10px;
+   margin-top: 10px;
+   border: none;
+   cursor: pointer;
+   width: 144%;
+}
+.signin-btn:hover {
+   opacity: 0.8;
+ }
+/* The Modal (background) */
+.signInModal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+      vertical-align: middle;
+      
+   z-index: 1; /* Sit on top */
+   left: 20%;
+   top: 10%;
+   width: 50%; /* Full width */
+   height: 50%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(255, 255, 255); /* Fallback color */
+   
+ }
+ #sign-in-modal.signInModal{
+   top:20%;
+   left: 33.33%;
+   width: 500px;
+   height: 500px;
+   
+ }
+ #sign-in-modal-content.modalContent {
+   background-color: #fefefe;
+   
+   padding: 20px;
+   
+   width: 80%; /* Could be more or less, depending on screen size */
+   
+    position: absolute;
+    top: 33.33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+ }
+
+ .signInFooter {
+    float:bottom;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+ }
+
+ a {
    font-size: 14px;
    color: #186CA3;
    text-decoration: none;
 }
-
-.signin-btn {
-   background-color: orange;
-   padding: 10px;
-   border: none;
-   color: #fff;
-   font-size: 16px;
-   margin-top: 20px;
-   cursor: pointer;
-}
-/* The Modal (background) */
-.modal {
-   display: none; /* Hidden by default */
+ .signUpModal {
+   display: flex; /* Hidden by default */
    position: fixed; /* Stay in place */
    z-index: 1; /* Sit on top */
    left: 0;
    top: 0;
-   width: 100%; /* Full width */
-   height: 100%; /* Full height */
+   width: 50%; /* Full width */
+   height: 50%; /* Full height */
    overflow: auto; /* Enable scroll if needed */
    background-color: rgb(0,0,0); /* Fallback color */
    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
  }
  
- /* Modal Content/Box */
- .modal-content {
-   background-color: #fefefe;
-   margin: 15% auto; /* 15% from the top and centered */
-   padding: 20px;
-   border: 1px solid #888;
-   width: 80%; /* Could be more or less, depending on screen size */
- }
+ 
  
  /* The Close Button */
  .close {
