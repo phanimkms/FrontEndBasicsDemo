@@ -64,7 +64,9 @@
 
     <div id="sign-up-modal" class="signUpModal">
         <!-- Insert code for Sign Up modal here -->
-            <span class="close">&times;</span>
+        <div id="sign-up-modal-content" class="modalContent">
+                <h1 style="text-align:center;"><b>Get Started</b><span class="close">&times;</span></h1>
+                <hr>  
             <form id="signup-form" name="SignupForm">
                     <label for="fullname" class="label-text">Full Name</label>
                     <input type="text" id="fullname" placeholder="Enter Full Name" required>
@@ -74,10 +76,10 @@
                     <input type="password" id="password" placeholder="Enter Password" required>
                     <label for="confirmpassword" class="label-text">Confirm Password</label>
                     <input type="password" id="confirmpassword" placeholder="Confirm Password" required>
-                    <button type="submit" onClick="signup(username, password)" class="signup-btn">Sign Up</button>
-                </form>
-            
-    
+                    <button type="submit" onClick="signup(fullname,username, password,confirmpassword)" class="signup-btn">Sign Up</button>
+                   
+                </form> 
+            </div>
         </div>
 
     <div>

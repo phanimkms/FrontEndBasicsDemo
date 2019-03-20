@@ -5,7 +5,7 @@ body{
    background-position: center center;
    background-size: cover;
    margin: 0 !important;
-   background-size: 100% cover!important;
+   background-size: 100% cover !important;
    overflow:hidden;
    display: block;
 } 
@@ -67,7 +67,7 @@ input[type=text], input[type=password] {
    outline: none;
    background-color:rgb(220,220,220);
 }
-.signin-btn {
+button {
    background-color: #4CAF50;
    color: #fff;
    font-size: 16px;
@@ -77,7 +77,7 @@ input[type=text], input[type=password] {
    cursor: pointer;
    width: 144%;
 }
-.signin-btn:hover {
+button:hover {
    opacity: 0.8;
  }
 /* The Modal (background) */
@@ -128,16 +128,32 @@ input[type=text], input[type=password] {
    text-decoration: none;
 }
  .signUpModal {
-   display: flex; /* Hidden by default */
+   display: none; /* Hidden by default */
    position: fixed; /* Stay in place */
+      vertical-align: middle;
+      
    z-index: 1; /* Sit on top */
-   left: 0;
-   top: 0;
+   left: 20%;
+   top: 10%;
    width: 50%; /* Full width */
    height: 50%; /* Full height */
    overflow: auto; /* Enable scroll if needed */
-   background-color: rgb(0,0,0); /* Fallback color */
-   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+   background-color: rgb(255, 255, 255); /* Fallback color */
+ }
+ #sign-up-modal.signUpModal{
+   top: 20%;
+   left: 33.33%;
+   width: 400px;
+   height: 550px;
+ }
+ #sign-up-modal-content.modalContent {
+   background-color: #fefefe;
+   width: 90%; /* Could be more or less, depending on screen size */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
  }
  
  
